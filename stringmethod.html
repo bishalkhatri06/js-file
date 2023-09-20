@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const text='Welcome to Dursikshya to read To programming language'
+        document.write(`${text}<br>`)
+
+        // to count the length of string using .length
+        document.write(`${text.length} <br>`)
+
+        // methods for extractingg a part of string
+        // .slice(start,end)
+        // .substring(start,end)
+        // .substr(start, length)
+        document.write(`${text.slice(0,7)}<br>`)
+        document.write(`${text.substring(4,15)}<br> `)
+        document.write(`${text.substr(8,5)}<br>`)
+
+        // replace string content
+        // .replce(rfrom,rTo)
+        // .replaceAll(rfrom,rTo)
+
+        // document.write(`${text.replace('to','too')}<br>`)
+        // document.write(`${text.replaceAll('to','too')}<br>`)
+        document.write(`${text.replace(/to/g,'too')}<br>`)
+        document.write(`${text.replace(/to/gi,'too')}<br>`)
+
+        // converting string to lower and upper case
+        // .toUpperCase()
+        // .toLowerCase()
+        document.write(`${text.toLowerCase()}<br>`)
+        document.write(`${text.toUpperCase()}<br>`)
+
+        // .concat(firststr,secondstr) to join two or more string
+        let text1='hello'
+        let text2=text.concat(" ",text1)
+        document.write(text2)
+
+        document.write(`<br>`)
+        // .trim()
+        let test='    hello  '
+        document.write(`${test.trim()}`)
+        document.write(`${test.trimStart()}`)
+        document.write(`${test.trimEnd()}`)
+        document.write(`<br>`)
+        // .padStart() & .padEnd()
+        let text3='5'
+        let padded=text3.padStart(4,"0")
+        document.write(padded)
+        document.write(`<br>`)
+        let padded1=text3.padEnd(4,"0")
+        document.write(padded1)
+        document.write(`<br>`)
+        // extracting string character
+        // .charAt(), .charCodeAt(), proprty access[]
+        document.write(`${text.charAt(5)}<br>`)
+        document.write(`${text.charCodeAt(5)}<br>`)
+        document.write(`${text[5]}<br>`)
+
+        // .split()
+        document.write(`${text.split(' ')}`)
+        console.log(`${text.split(' ')}`)
+
+    </script>
+</body>
+</html>

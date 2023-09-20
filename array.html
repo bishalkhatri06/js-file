@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        // array -> it is a collection of multiple values
+        // values inside array is called element
+        // while accessing the single element from the array you must use indexing.
+
+        const fruits=['mango','banana','cherry','papaya','orange','apple']
+        document.write(`${fruits}<br>`)
+
+        document.write(`${fruits[0]}<br>`)
+        document.write(`${fruits[0][3]}<br>`)
+
+        document.write(`${fruits.length}<br>`)
+        document.write(`${fruits[1].length}<br>`)
+
+        // to remove last element of array use .pop()
+        fruits.pop()
+        document.write(`${fruits}<br>`)
+
+        // to add element use .push()
+        fruits.push('watermelon')
+        document.write(`${fruits}<br>`)
+
+        // to remove first element
+        fruits.shift()
+        document.write(`${fruits}<br>`)
+
+        // to add element in first position
+        fruits.unshift('litchee')
+        document.write(`${fruits}<br>`)
+
+        // use .splice() to remove or add one or more element from the array at specific position
+        fruits.splice(2,3,'kiwi','guava')
+        // 2 -> position where the element is start to remove or add from array
+        // 0 -> number of element removed from the array
+        document.write(`${fruits}<br>`)
+
+        // sort() -> to arrange in ascending order
+        fruits.sort()
+        document.write(`${fruits}<br>`)
+
+        // reverse() -> to reverse the array element
+        fruits.reverse()
+        document.write(`${fruits}<br>`)
+    </script>
+</body>
+</html>

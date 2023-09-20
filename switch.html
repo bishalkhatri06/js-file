@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        const x=parseInt(prompt('first number:'))
+        const y=parseInt(prompt('second number:'))
+        const operator=prompt('tell me what do you want to do:')
+
+        switch (operator) {
+            case '+':
+                const add=x+y
+                document.write(`the sum is ${add}`)
+                break;
+            case '-':
+                const sub=x-y
+                document.write(`the substractionis ${sub}`)
+        
+            default:
+                document.write('invalid operator')
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+<body>
+    <script>
+        // Conditional Statements are used to perform different actions based on different conditions.
+        // It helps to make decisions
+        // if - it specify a block of code/statement to be executed, if a specific condition is true.
+        // else - it specify a block of code/state to be executed, if the same condition is false.
+        // else if - it specify a new condition to test, if the first condition is false
+        // switch - it specify many alternative blocks of code to be executed.
+        // break - it break the condition/ loop if it completes or false
+        // continue - it continue the code
+
+        let x=parseInt(('enter number:'))
+        if(x%2==0){
+            document.write(`${x} is an even number`)
+        }
+        else{
+            document.write(`${x} is an odd number`)
+        }
+
+        document.write(`<br>`)
+
+        // to check negative/positive/zero
+        y=parseInt(prompt('Enter a number:'))
+        if(y>0){
+            document.write(`${y} is positive number`)
+        }
+        else if(y<0){
+            document.write(`${y} is negative number`)
+        }
+        else{
+            document.write('zero')
+        }
+
+        document.write(`<br>`)
+
+        let a=10
+        let b=2
+        let c=1
+        if((a>b)&&(a>c)){
+            document.write(`${a} is greater`)
+        }
+        else if((b>a)&&(b>c)){
+            document.write(`${b} is greater`)
+        }
+        else{
+            document.write(`${c} is greater`)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some & every</title>
+</head>
+<body>
+    <script>
+        // every -> returns true if all the array element should met given conditions
+
+        const num=[5,10,3,7,8,-4]
+
+        const result=num.every(n=>{
+            return n<0
+        })
+        document.write(result)
+        document.write(`<br>`)
+        // some => returns true if one array element met given condition
+
+        const res=num.some(num=>{
+            return num<0
+        })
+        document.write(res)
+
+        document.write(`<br>`)
+        const strings=['apple','banana','mango','litchi','strawberry','kiwi']
+
+        const rlt=strings.every(str=>{
+            return str.length>4
+        })
+        document.write(rlt)
+        document.write(`<br>`)
+        document.write(strings.includes('apple'))
+    </script>
+</body>
+</html>
